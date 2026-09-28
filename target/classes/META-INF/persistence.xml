@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+             https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+
+    <persistence-unit name="ASM_PolyOE">
+        <class>com.poly.Assignment_VuNgocKhanh_PH59462.entity.User</class>
+        <class>com.poly.Assignment_VuNgocKhanh_PH59462.entity.Video</class>
+        <class>com.poly.Assignment_VuNgocKhanh_PH59462.entity.Favorite</class>
+        <class>com.poly.Assignment_VuNgocKhanh_PH59462.entity.Share</class>
+        <properties>
+
+            <property
+                    name="jakarta.persistence.jdbc.driver"
+                    value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+
+            <property
+                    name="jakarta.persistence.jdbc.url"
+                    value="jdbc:sqlserver://localhost:1433;databaseName=ASM_PolyOE;encrypt=true;trustServerCertificate=true"/>
+
+            <property
+                    name="jakarta.persistence.jdbc.user"
+                    value="Nkhanh"/>
+
+            <property
+                    name="jakarta.persistence.jdbc.password"
+                    value="yuukoonair249"/>
+
+            <property
+                    name="hibernate.show_sql"
+                    value="true"/>
+
+            <property
+                    name="hibernate.format_sql"
+                    value="true"/>
+
+            <property
+                    name="hibernate.highlight_sql"
+                    value="true"/>
+
+            <property
+                    name="hibernate.use_sql_comments"
+                    value="true"/>
+
+            <property
+                    name="hibernate.connection.characterEncoding"
+                    value="UTF-8"/>
+
+            <property
+                    name="hibernate.hbm2ddl.auto"
+                    value="validate"/>
+
+        </properties>
+
+    </persistence-unit>
+
+</persistence>

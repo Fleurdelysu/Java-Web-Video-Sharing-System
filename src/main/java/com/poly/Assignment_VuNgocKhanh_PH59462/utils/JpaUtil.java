@@ -1,0 +1,21 @@
+package com.poly.Assignment_VuNgocKhanh_PH59462.utils;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+
+public class JpaUtil {
+
+    private static final EntityManagerFactory emf =
+            Persistence.createEntityManagerFactory("ASM_PolyOE");
+
+    public static EntityManager getEntityManager() {
+        return emf.createEntityManager();
+    }
+
+    public static void close() {
+        if (emf != null && emf.isOpen()) {
+            emf.close();
+        }
+    }
+}
